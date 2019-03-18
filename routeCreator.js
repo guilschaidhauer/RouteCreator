@@ -8,17 +8,11 @@ var timeMatrix = [
 
 var peopleList = [];
 
-peopleList.push(new Person("G", 0, true));
-peopleList.push(new Person("M", 1, true));
-peopleList.push(new Person("T", 2, true));
-peopleList.push(new Person("F", 3, true));
-peopleList.push(new Person("S", 4, true));
-
-//peopleList[0].active = false;
-//peopleList[1].active = false;
-peopleList[2].active = false;
-peopleList[3].active = false;
-
+peopleList.push(new Person("G", "g", "Whatever Street", 0, false));
+peopleList.push(new Person("M", "m", "Whatever Street", 1, false));
+peopleList.push(new Person("T", "t", "Whatever Street", 2, false));
+peopleList.push(new Person("F", "f", "Whatever Street", 3, false));
+peopleList.push(new Person("S", "s", "Whatever Street", 4, false));
 
 var arrivalTime = new Time(9, 50);
 
@@ -26,6 +20,7 @@ function createRoute(peopleList) {
     var route = []; 
 
     route.push(new RoutePoint(peopleList[peopleList.length-1], arrivalTime));
+    setPeoplesActiveStatus(peopleList);
 
     var offSet = peopleList.length-2;
 
@@ -56,6 +51,17 @@ function createNewTime(time) {
     return new Time(time.hour, time.minutes);
 }
 
-var finishedRoute = createRoute(peopleList);
+function setPeoplesActiveStatus(peopleList) {
+    var peopleListElement = document.getElementById("peopleList");
+    var peopleDivList = peopleListElement.querySelectorAll("input");
+    for (var i=0; i<peopleDivList.length; i++) {
+        if(peopleDivList[i].checked){
+            peopleList[i].setActive(true);
+        }
+    }
+}
 
-printRoute(finishedRoute);
+function startRouteCreation(){
+    var finishedRoute = createRoute(peopleList);
+    printRoute(finishedRoute);
+}

@@ -1,8 +1,10 @@
 class Person {
     
-    constructor(name, index, active) {
+    constructor(name, id, index, address, active) {
         this.name = name;
+        this.id = id;
         this.index = index;
+        this.address = address;
         this.active = active;
     }
 
