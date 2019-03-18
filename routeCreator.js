@@ -8,11 +8,11 @@ var timeMatrix = [
 
 var peopleList = [];
 
-peopleList.push(new Person("G", "g", "Whatever Street", 0, false));
-peopleList.push(new Person("M", "m", "Whatever Street", 1, false));
-peopleList.push(new Person("T", "t", "Whatever Street", 2, false));
-peopleList.push(new Person("F", "f", "Whatever Street", 3, false));
-peopleList.push(new Person("S", "s", "Whatever Street", 4, false));
+peopleList.push(new Person("G", "g", 0, "Whatever Street", false));
+peopleList.push(new Person("M", "m", 1, "Whatever Street", false));
+peopleList.push(new Person("T", "t", 2, "Whatever Street", false));
+peopleList.push(new Person("F", "f", 3, "Whatever Street", false));
+peopleList.push(new Person("S", "s", 4, "Whatever Street", false));
 
 var arrivalTime = new Time(9, 50);
 
