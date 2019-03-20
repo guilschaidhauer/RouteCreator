@@ -3,12 +3,27 @@
 
 <head>
     <title>Route Creator</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
 <body>
     <form id="peopleList">
     </form>
     <button type="button" onclick="onCreateRouteClick();">Create Route</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Horario</th>
+                <th>Nome</th>
+                <th>Local de embarque</th>
+            </tr>
+        </thead>
+        <tbody id="routeTable">
+        </tbody>
+    </table>
+
+
 </body>
 <script src="dataFiles/peopleList.js"></script>
 <script src="dataFiles/timeMatrix.js"></script>
@@ -19,5 +34,4 @@
 <script src="dataReader.js"></script>
 <script src="routeCreator.js"></script>
 <script src="pageHandler.js"></script>
-
 </html>

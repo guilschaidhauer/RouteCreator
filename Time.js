@@ -20,6 +20,10 @@ class Time {
         return new Time(this.hour, this.minutes);
     }
 
+    getTimeString(){
+        return this.hour + ":" + this.minutes;
+    }
+
     printTime() {
         console.log(this.hour + ":" + this.minutes);
     }

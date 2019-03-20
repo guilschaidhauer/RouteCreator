@@ -41,13 +41,12 @@ function setPeoplesActiveStatus(peopleList) {
     var peopleListElement = document.getElementById("peopleList");
     var peopleDivList = peopleListElement.querySelectorAll("input");
     for (var i = 0; i < peopleDivList.length; i++) {
-        if (peopleDivList[i].checked) {
-            peopleList[i].setActive(true);
-        }
+        peopleList[i].setActive(peopleDivList[i].checked);
     }
 }
 
 function onCreateRouteClick() {
     var finishedRoute = createRoute(peopleList);
+    populateRouteTable(finishedRoute);
     printRoute(finishedRoute);
 }
