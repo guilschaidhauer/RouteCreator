@@ -1,34 +1,34 @@
 var peopleObject = [{
-        name: "G",
-        id: "g",
+        name: "Guilherme",
+        id: "guilherme",
         index: 0,
-        address: "Whatever Street",
+        address: "Rua qualquer n 20",
         active: false
     }, {
-        name: "M",
-        id: "m",
+        name: "Marcos",
+        id: "marcos",
         index: 1,
-        address: "Whatever Street",
+        address: "Rua qualquer n 30",
         active: false
     },
     {
-        name: "T",
-        id: "t",
+        name: "Tatiana",
+        id: "tatiana",
         index: 2,
-        address: "Whatever Street",
+        address: "Rua qualquer n 40",
         active: false
     },
     {
-        name: "F",
-        id: "f",
+        name: "Felipe",
+        id: "felipe",
         index: 3,
-        address: "Whatever Street",
+        address: "Rua qualquer n 50",
         active: false
     },
     {
-        name: "S",
-        id: "s",
+        name: "SAP",
+        id: "sap",
         index: 4,
-        address: "Whatever Street",
+        address: "Rua do Labs n 20",
         active: false
     }]

@@ -1,4 +1,4 @@
 var arrivalTimeObject = {
-    hour: 9,
-    minutes: 50
+    hour: 12,
+    minutes: 20
 }

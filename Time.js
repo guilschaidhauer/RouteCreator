@@ -21,7 +21,12 @@ class Time {
     }
 
     getTimeString(){
-        return this.hour + ":" + this.minutes;
+        var minutesString = this.minutes.toString();
+        
+        if (this.minutes < 10)
+            minutesString = "0" + minutesString;
+
+        return this.hour + ":" + minutesString;
     }
 
     printTime() {
