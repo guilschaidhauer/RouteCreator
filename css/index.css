@@ -1,5 +1,5 @@
 body {
-	background-color: #2fc1be;
+	background-color: #87bdfc;
 	margin: 0px;
 	}
 	
@@ -16,7 +16,7 @@ body {
 	vertical-align: top;
 	}
 	
-#rota {
+#route {
 	margin: auto;
 	width: 20%;
 	padding: 2%;
@@ -25,7 +25,7 @@ body {
 	
 }
 
-#planilha {
+#sheet {
  	margin: auto;
 	width: 70%;
 	padding: 2%;
@@ -34,26 +34,26 @@ body {
 	color: #FFFFFF;
 }
 
-#planilha  table {
-	width: 100%;
+#sheet  table {
+	width: 60%;
 	margin-bottom : .5em;
-    table-layout: fixed;
+    table-layout: auto;
 }
 
-#planilha td, th {
+#sheet td, th {
 	padding: .7em;
 	margin: 0;
 	border: 1px solid #ccc;
 	text-align: center;
 }
 
-#planilha th{
+#sheet th{
 	font-weight: bold;
 	background-color: #EEE;
-	color: #2fc1be
+	color: #4198fd
 }
 
-#rota button {
+#route button {
 	text-align: center;
 	color: #ffffff;
 	font-family: "Sans-serif", Arial;
@@ -61,5 +61,5 @@ body {
 	border: 1px solid #ffffff;
 	border-radius: 10px;
 	padding: 2%;
-	background-color: #2fc1be;
+	background-color: #4198fd;
 }
