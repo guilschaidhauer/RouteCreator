@@ -4,26 +4,32 @@
 <head>
     <title>Route Creator</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta charset="utf-8">
 </head>
 
 <body>
-    <form id="peopleList">
-    </form>
-    <button type="button" onclick="onCreateRouteClick();">Create Route</button>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Horario</th>
-                <th>Nome</th>
-                <th>Local de embarque</th>
-            </tr>
-        </thead>
-        <tbody id="routeTable">
-        </tbody>
-    </table>
-
-
+	<div id="title">
+		<p>Route Creator </p>
+	</div>
+	<div id="rota">
+	    <form id="peopleList">
+	    </form>
+	    <br/><br/>
+	    <button type="button" onclick="onCreateRouteClick();">Create Route</button>
+	</div>
+	<div id="planilha">
+	    <table>
+		   <thead>
+			  <tr>
+				 <th width="100px">Horario</th>
+				 <th width="200px">Nome</th>
+				 <th>Local de embarque</th>
+			  </tr>
+		   </thead>
+		   <tbody id="routeTable">
+		   </tbody>
+	    </table>
+	</div>
 </body>
 <script src="dataFiles/peopleList.js"></script>
 <script src="dataFiles/timeMatrix.js"></script>

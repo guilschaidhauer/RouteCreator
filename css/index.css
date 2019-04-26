@@ -1,17 +1,65 @@
-table{
+body {
+	background-color: #2fc1be;
+	margin: 0px;
+	}
+	
+#title {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	box-shadow: 0px 3px 3px 0px #FFFFFF;
+	}
+	
+#title p {
+	color: #FFFFFF;
+	font-size: 20px;;
+	vertical-align: top;
+	}
+	
+#rota {
+	margin: auto;
+	width: 20%;
+	padding: 2%;
+	color: #FFFFFF;
+	float: left;
+	
+}
+
+#planilha {
+ 	margin: auto;
+	width: 70%;
+	padding: 2%;
+	text-align: center;
+	float: right;
+	color: #FFFFFF;
+}
+
+#planilha  table {
 	width: 100%;
 	margin-bottom : .5em;
     table-layout: fixed;
 }
 
-td, th {
+#planilha td, th {
 	padding: .7em;
 	margin: 0;
 	border: 1px solid #ccc;
 	text-align: center;
 }
 
-th{
+#planilha th{
 	font-weight: bold;
 	background-color: #EEE;
+	color: #2fc1be
+}
+
+#rota button {
+	text-align: center;
+	color: #ffffff;
+	font-family: "Sans-serif", Arial;
+	font-size: 15px;
+	border: 1px solid #ffffff;
+	border-radius: 10px;
+	padding: 2%;
+	background-color: #2fc1be;
 }
